@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent"
+    tools:context="com.example.chinmay.project.Manualmode">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Select the options for Manual Editing :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#d5cfcf"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Select"
+        android:onClick="Select"
+        android:layout_alignTop="@+id/radio1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio1"
+        android:hapticFeedbackEnabled="true"
+        android:orientation="vertical"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/text"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginStart="28dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to pickup in Morning"
+            android:textColor="#d5cfcf"
+            android:id="@+id/r1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove pickup in from Morning"
+            android:textColor="#d5cfcf"
+            android:id="@+id/r2"/>
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textColor="#d5cfcf"
+            android:text="Add to pickup in Evening"
+        android:id="@+id/r3"/>
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textColor="#d5cfcf"
+            android:text="Remove from pickup in Evening"
+        android:id="@+id/r4"/>
+
+    </RadioGroup>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@id/radio1"
+        android:layout_marginTop="20dp"
+
+        android:textColor="#d5cfcf"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/list2"></ListView>
+
+
+</RelativeLayout>

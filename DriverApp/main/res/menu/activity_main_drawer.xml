@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/morning"
+            android:icon="@drawable/ic_directions_bus_black_24dp"
+            android:title="Morning" />
+        <item
+            android:id="@+id/evening"
+            android:icon="@drawable/ic_directions_bus_black_24dp"
+            android:title="Evening" />
+        <item
+            android:id="@+id/remaining"
+            android:icon="@drawable/ic_directions_bus_black_24dp"
+            android:title="Remaining" />
+        <item
+            android:id="@+id/Add"
+            android:icon="@drawable/ic_loupe_black_24dp"
+            android:title="Add" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/developer"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About Developer" />
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact Info" />
+        </menu>
+    </item>
+
+</menu>
