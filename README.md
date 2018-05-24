@@ -1,0 +1,2 @@
+# CSecure
+CSecure ia an IoT based project for child tracking. It helps the parents stay notified whether their child has boarded the bus or not and also allows them to do real time tracking of the bus.For efficient communication between the school,driver and the parents three apps are created one for each the parent,driver and the admin.It uses raspberry pi for interfacing. Firebase is used as data store.
