@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/busheading"
+            android:layout_marginLeft="30dp"
+            android:layout_alignEnd="@+id/locationHead"
+            android:scaleType="center"
+            android:src="@drawable/ic_action_name" />
+
+            <TextView
+                android:id="@+id/drivername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@string/app_name"
+                android:text=" VISHAL SINGH"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imagestatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/redcircle" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/busheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/locationHead"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="Bus:  "
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/busno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/busheading"
+            android:layout_alignBottom="@+id/busheading"
+            android:layout_alignStart="@+id/drivername"
+            android:text=" MH 31 EW 4634"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/locationHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/studentCountHead"
+            android:layout_below="@+id/busheading"
+            android:layout_marginLeft="20dp"
+            android:text="Location:  "
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/locationHead"
+            android:layout_alignStart="@+id/busno"
+            android:text=" Shri Ramdeobaba College of engineering" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/studentCountHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/studentcount"
+            android:layout_alignBottom="@+id/studentcount"
+            android:layout_marginLeft="20dp"
+            android:layout_toStartOf="@+id/location"
+            android:text="Students Present:  "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/studentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/location"
+            android:layout_below="@+id/location"
+            android:text=" 0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/statushead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/studentCountHead"
+            android:layout_below="@+id/studentcount"
+            android:layout_marginLeft="20dp"
+            android:text="Speed:  "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/busstatus"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/statushead"
+            android:layout_alignBottom="@+id/statushead"
+            android:layout_alignStart="@+id/location"
+            android:text=" Speed of the bus" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

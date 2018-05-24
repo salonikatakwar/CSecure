@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/reg_student"
+            android:icon="@drawable/common_full_open_on_phone"
+            android:title="Register Student" />
+        <item
+            android:id="@+id/reg_driver"
+            android:icon="@drawable/ic_directions_bus_black_24dp"
+            android:title="Register Driver" />
+        <item
+            android:id="@+id/driver_details"
+            android:icon="@drawable/ic_border_color_black_24dp"
+            android:title="Driver Details" />
+        <item
+            android:id="@+id/stats"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Bus Status" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contact_parent"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact Parent" />
+            <item
+                android:id="@+id/contact_driver"
+                android:icon="@drawable/ic_contact_phone_black_24dp"
+                android:title="Contact Driver" />
+        </menu>
+    </item>
+
+</menu>
